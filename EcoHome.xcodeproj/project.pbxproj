@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7421DBA6191B7DB100BB1189 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7421DBA5191B7DB100BB1189 /* Foundation.framework */; };
+		7421DBA8191B7DB100BB1189 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7421DBA7191B7DB100BB1189 /* CoreGraphics.framework */; };
+		7421DBAA191B7DB100BB1189 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7421DBA9191B7DB100BB1189 /* UIKit.framework */; };
+		7421DBAC191B7DB100BB1189 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7421DBAB191B7DB100BB1189 /* CoreData.framework */; };
+		7421DBB2191B7DB100BB1189 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7421DBB0191B7DB100BB1189 /* InfoPlist.strings */; };
+		7421DBB4191B7DB100BB1189 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7421DBB3191B7DB100BB1189 /* main.m */; };
+		7421DBB8191B7DB100BB1189 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7421DBB7191B7DB100BB1189 /* AppDelegate.m */; };
+		7421DBBB191B7DB100BB1189 /* EcoHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7421DBB9191B7DB100BB1189 /* EcoHome.xcdatamodeld */; };
+		7421DBBD191B7DB100BB1189 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7421DBBC191B7DB100BB1189 /* Images.xcassets */; };
+		7421DBC4191B7DB100BB1189 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7421DBC3191B7DB100BB1189 /* XCTest.framework */; };
+		7421DBC5191B7DB100BB1189 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7421DBA5191B7DB100BB1189 /* Foundation.framework */; };
+		7421DBC6191B7DB100BB1189 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7421DBA9191B7DB100BB1189 /* UIKit.framework */; };
+		7421DBC7191B7DB100BB1189 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7421DBAB191B7DB100BB1189 /* CoreData.framework */; };
+		7421DBCF191B7DB100BB1189 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7421DBCD191B7DB100BB1189 /* InfoPlist.strings */; };
+		7421DBD1191B7DB100BB1189 /* EcoHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7421DBD0191B7DB100BB1189 /* EcoHomeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7421DBC8191B7DB100BB1189 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7421DB9A191B7DB100BB1189 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7421DBA1191B7DB100BB1189;
+			remoteInfo = EcoHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7421DBA2191B7DB100BB1189 /* EcoHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7421DBA5191B7DB100BB1189 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7421DBA7191B7DB100BB1189 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7421DBA9191B7DB100BB1189 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7421DBAB191B7DB100BB1189 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7421DBAF191B7DB100BB1189 /* EcoHome-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EcoHome-Info.plist"; sourceTree = "<group>"; };
+		7421DBB1191B7DB100BB1189 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7421DBB3191B7DB100BB1189 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7421DBB5191B7DB100BB1189 /* EcoHome-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EcoHome-Prefix.pch"; sourceTree = "<group>"; };
+		7421DBB6191B7DB100BB1189 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7421DBB7191B7DB100BB1189 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7421DBBA191B7DB100BB1189 /* EcoHome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EcoHome.xcdatamodel; sourceTree = "<group>"; };
+		7421DBBC191B7DB100BB1189 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7421DBC2191B7DB100BB1189 /* EcoHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7421DBC3191B7DB100BB1189 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7421DBCC191B7DB100BB1189 /* EcoHomeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EcoHomeTests-Info.plist"; sourceTree = "<group>"; };
+		7421DBCE191B7DB100BB1189 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7421DBD0191B7DB100BB1189 /* EcoHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EcoHomeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7421DB9F191B7DB100BB1189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7421DBA8191B7DB100BB1189 /* CoreGraphics.framework in Frameworks */,
+				7421DBAC191B7DB100BB1189 /* CoreData.framework in Frameworks */,
+				7421DBAA191B7DB100BB1189 /* UIKit.framework in Frameworks */,
+				7421DBA6191B7DB100BB1189 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7421DBBF191B7DB100BB1189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7421DBC4191B7DB100BB1189 /* XCTest.framework in Frameworks */,
+				7421DBC7191B7DB100BB1189 /* CoreData.framework in Frameworks */,
+				7421DBC6191B7DB100BB1189 /* UIKit.framework in Frameworks */,
+				7421DBC5191B7DB100BB1189 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7421DB99191B7DB100BB1189 = {
+			isa = PBXGroup;
+			children = (
+				7421DBAD191B7DB100BB1189 /* EcoHome */,
+				7421DBCA191B7DB100BB1189 /* EcoHomeTests */,
+				7421DBA4191B7DB100BB1189 /* Frameworks */,
+				7421DBA3191B7DB100BB1189 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7421DBA3191B7DB100BB1189 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7421DBA2191B7DB100BB1189 /* EcoHome.app */,
+				7421DBC2191B7DB100BB1189 /* EcoHomeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7421DBA4191B7DB100BB1189 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7421DBA5191B7DB100BB1189 /* Foundation.framework */,
+				7421DBA7191B7DB100BB1189 /* CoreGraphics.framework */,
+				7421DBA9191B7DB100BB1189 /* UIKit.framework */,
+				7421DBAB191B7DB100BB1189 /* CoreData.framework */,
+				7421DBC3191B7DB100BB1189 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7421DBAD191B7DB100BB1189 /* EcoHome */ = {
+			isa = PBXGroup;
+			children = (
+				7421DBB6191B7DB100BB1189 /* AppDelegate.h */,
+				7421DBB7191B7DB100BB1189 /* AppDelegate.m */,
+				7421DBBC191B7DB100BB1189 /* Images.xcassets */,
+				7421DBB9191B7DB100BB1189 /* EcoHome.xcdatamodeld */,
+				7421DBAE191B7DB100BB1189 /* Supporting Files */,
+			);
+			path = EcoHome;
+			sourceTree = "<group>";
+		};
+		7421DBAE191B7DB100BB1189 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7421DBAF191B7DB100BB1189 /* EcoHome-Info.plist */,
+				7421DBB0191B7DB100BB1189 /* InfoPlist.strings */,
+				7421DBB3191B7DB100BB1189 /* main.m */,
+				7421DBB5191B7DB100BB1189 /* EcoHome-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7421DBCA191B7DB100BB1189 /* EcoHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7421DBD0191B7DB100BB1189 /* EcoHomeTests.m */,
+				7421DBCB191B7DB100BB1189 /* Supporting Files */,
+			);
+			path = EcoHomeTests;
+			sourceTree = "<group>";
+		};
+		7421DBCB191B7DB100BB1189 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7421DBCC191B7DB100BB1189 /* EcoHomeTests-Info.plist */,
+				7421DBCD191B7DB100BB1189 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7421DBA1191B7DB100BB1189 /* EcoHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7421DBD4191B7DB100BB1189 /* Build configuration list for PBXNativeTarget "EcoHome" */;
+			buildPhases = (
+				7421DB9E191B7DB100BB1189 /* Sources */,
+				7421DB9F191B7DB100BB1189 /* Frameworks */,
+				7421DBA0191B7DB100BB1189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EcoHome;
+			productName = EcoHome;
+			productReference = 7421DBA2191B7DB100BB1189 /* EcoHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7421DBC1191B7DB100BB1189 /* EcoHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7421DBD7191B7DB100BB1189 /* Build configuration list for PBXNativeTarget "EcoHomeTests" */;
+			buildPhases = (
+				7421DBBE191B7DB100BB1189 /* Sources */,
+				7421DBBF191B7DB100BB1189 /* Frameworks */,
+				7421DBC0191B7DB100BB1189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7421DBC9191B7DB100BB1189 /* PBXTargetDependency */,
+			);
+			name = EcoHomeTests;
+			productName = EcoHomeTests;
+			productReference = 7421DBC2191B7DB100BB1189 /* EcoHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7421DB9A191B7DB100BB1189 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					7421DBC1191B7DB100BB1189 = {
+						TestTargetID = 7421DBA1191B7DB100BB1189;
+					};
+				};
+			};
+			buildConfigurationList = 7421DB9D191B7DB100BB1189 /* Build configuration list for PBXProject "EcoHome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7421DB99191B7DB100BB1189;
+			productRefGroup = 7421DBA3191B7DB100BB1189 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7421DBA1191B7DB100BB1189 /* EcoHome */,
+				7421DBC1191B7DB100BB1189 /* EcoHomeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7421DBA0191B7DB100BB1189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7421DBB2191B7DB100BB1189 /* InfoPlist.strings in Resources */,
+				7421DBBD191B7DB100BB1189 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7421DBC0191B7DB100BB1189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7421DBCF191B7DB100BB1189 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7421DB9E191B7DB100BB1189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7421DBB8191B7DB100BB1189 /* AppDelegate.m in Sources */,
+				7421DBBB191B7DB100BB1189 /* EcoHome.xcdatamodeld in Sources */,
+				7421DBB4191B7DB100BB1189 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7421DBBE191B7DB100BB1189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7421DBD1191B7DB100BB1189 /* EcoHomeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7421DBC9191B7DB100BB1189 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7421DBA1191B7DB100BB1189 /* EcoHome */;
+			targetProxy = 7421DBC8191B7DB100BB1189 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7421DBB0191B7DB100BB1189 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7421DBB1191B7DB100BB1189 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7421DBCD191B7DB100BB1189 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7421DBCE191B7DB100BB1189 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7421DBD2191B7DB100BB1189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7421DBD3191B7DB100BB1189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7421DBD5191B7DB100BB1189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EcoHome/EcoHome-Prefix.pch";
+				INFOPLIST_FILE = "EcoHome/EcoHome-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7421DBD6191B7DB100BB1189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EcoHome/EcoHome-Prefix.pch";
+				INFOPLIST_FILE = "EcoHome/EcoHome-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7421DBD8191B7DB100BB1189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EcoHome.app/EcoHome";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EcoHome/EcoHome-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EcoHomeTests/EcoHomeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7421DBD9191B7DB100BB1189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EcoHome.app/EcoHome";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EcoHome/EcoHome-Prefix.pch";
+				INFOPLIST_FILE = "EcoHomeTests/EcoHomeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7421DB9D191B7DB100BB1189 /* Build configuration list for PBXProject "EcoHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7421DBD2191B7DB100BB1189 /* Debug */,
+				7421DBD3191B7DB100BB1189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7421DBD4191B7DB100BB1189 /* Build configuration list for PBXNativeTarget "EcoHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7421DBD5191B7DB100BB1189 /* Debug */,
+				7421DBD6191B7DB100BB1189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7421DBD7191B7DB100BB1189 /* Build configuration list for PBXNativeTarget "EcoHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7421DBD8191B7DB100BB1189 /* Debug */,
+				7421DBD9191B7DB100BB1189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7421DBB9191B7DB100BB1189 /* EcoHome.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7421DBBA191B7DB100BB1189 /* EcoHome.xcdatamodel */,
+			);
+			currentVersion = 7421DBBA191B7DB100BB1189 /* EcoHome.xcdatamodel */;
+			path = EcoHome.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7421DB9A191B7DB100BB1189 /* Project object */;
+}
