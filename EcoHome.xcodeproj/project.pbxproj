@@ -25,6 +25,11 @@
 		7421DBDC191B7ED500BB1189 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7421DBDB191B7ED500BB1189 /* HomeViewController.m */; };
 		7421DBDE191B7EEE00BB1189 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7421DBDD191B7EEE00BB1189 /* iPadStoryboard.storyboard */; };
 		742205A7191BCE87007AC1FA /* DrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 742205A6191BCE87007AC1FA /* DrawingView.m */; };
+		7430F9321924EB590051FAB7 /* RoomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7430F9311924EB590051FAB7 /* RoomTableViewController.m */; };
+		7430F9351924ED3A0051FAB7 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 7430F9341924ED3A0051FAB7 /* Room.m */; };
+		7430F9371924FB1F0051FAB7 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7430F9361924FB1F0051FAB7 /* icon.png */; };
+		7430F93A1924FC5E0051FAB7 /* RoomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7430F9391924FC5E0051FAB7 /* RoomObject.m */; };
+		7430F93D192500810051FAB7 /* NewRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7430F93C192500810051FAB7 /* NewRoomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,15 @@
 		7421DBDD191B7EEE00BB1189 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		742205A5191BCE87007AC1FA /* DrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingView.h; sourceTree = "<group>"; };
 		742205A6191BCE87007AC1FA /* DrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingView.m; sourceTree = "<group>"; };
+		7430F9301924EB590051FAB7 /* RoomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomTableViewController.h; sourceTree = "<group>"; };
+		7430F9311924EB590051FAB7 /* RoomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomTableViewController.m; sourceTree = "<group>"; };
+		7430F9331924ED3A0051FAB7 /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		7430F9341924ED3A0051FAB7 /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
+		7430F9361924FB1F0051FAB7 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		7430F9381924FC5E0051FAB7 /* RoomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomObject.h; sourceTree = "<group>"; };
+		7430F9391924FC5E0051FAB7 /* RoomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomObject.m; sourceTree = "<group>"; };
+		7430F93B192500810051FAB7 /* NewRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRoomViewController.h; sourceTree = "<group>"; };
+		7430F93C192500810051FAB7 /* NewRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRoomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +146,14 @@
 				742205A6191BCE87007AC1FA /* DrawingView.m */,
 				7421DBBC191B7DB100BB1189 /* Images.xcassets */,
 				7421DBB9191B7DB100BB1189 /* EcoHome.xcdatamodeld */,
+				7430F9301924EB590051FAB7 /* RoomTableViewController.h */,
+				7430F9311924EB590051FAB7 /* RoomTableViewController.m */,
+				7430F93B192500810051FAB7 /* NewRoomViewController.h */,
+				7430F93C192500810051FAB7 /* NewRoomViewController.m */,
+				7430F9381924FC5E0051FAB7 /* RoomObject.h */,
+				7430F9391924FC5E0051FAB7 /* RoomObject.m */,
+				7430F9331924ED3A0051FAB7 /* Room.h */,
+				7430F9341924ED3A0051FAB7 /* Room.m */,
 				7421DBAE191B7DB100BB1189 /* Supporting Files */,
 			);
 			path = EcoHome;
@@ -140,6 +162,7 @@
 		7421DBAE191B7DB100BB1189 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7430F9361924FB1F0051FAB7 /* icon.png */,
 				7421DBAF191B7DB100BB1189 /* EcoHome-Info.plist */,
 				7421DBB0191B7DB100BB1189 /* InfoPlist.strings */,
 				7421DBB3191B7DB100BB1189 /* main.m */,
@@ -245,6 +268,7 @@
 			files = (
 				7421DBB2191B7DB100BB1189 /* InfoPlist.strings in Resources */,
 				7421DBBD191B7DB100BB1189 /* Images.xcassets in Resources */,
+				7430F9371924FB1F0051FAB7 /* icon.png in Resources */,
 				7421DBDE191B7EEE00BB1189 /* iPadStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,10 +288,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7430F9321924EB590051FAB7 /* RoomTableViewController.m in Sources */,
 				7421DBB8191B7DB100BB1189 /* AppDelegate.m in Sources */,
 				7421DBBB191B7DB100BB1189 /* EcoHome.xcdatamodeld in Sources */,
+				7430F93A1924FC5E0051FAB7 /* RoomObject.m in Sources */,
 				7421DBB4191B7DB100BB1189 /* main.m in Sources */,
+				7430F93D192500810051FAB7 /* NewRoomViewController.m in Sources */,
 				742205A7191BCE87007AC1FA /* DrawingView.m in Sources */,
+				7430F9351924ED3A0051FAB7 /* Room.m in Sources */,
 				7421DBDC191B7ED500BB1189 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
