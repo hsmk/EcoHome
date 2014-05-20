@@ -12,6 +12,9 @@
 
 @interface RoomTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
     Room *roomsList;
+    
+    
+    int roomToView;
 }
 
 @end

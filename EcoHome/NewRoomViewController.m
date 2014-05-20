@@ -47,30 +47,48 @@
 -(IBAction)addNewRoom:(id)sender{
     
     
-    roomToAdd._name = nameField.text;
-    //NSLog(@"HEY: %u", airconSwitch.state);
+    NSString *roomName = [nameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+
     
-    if([airconSwitch isOn]){
-        roomToAdd._aircon = YES;
-    }else{
-        roomToAdd._aircon = NO;
+    
+    if ([roomName isEqualToString:@""]){
+        
+        NSLog(@"invalid");
+        UIAlertView *invalidTextAlert = [[UIAlertView alloc] initWithTitle:@"Room Name Error" message:@"A room name must contain some letters!" delegate:self cancelButtonTitle:@"GOTCHA!" otherButtonTitles: nil];
+        [invalidTextAlert show];
+
     }
     
-    if([fridgeSwitch isOn]){
-        roomToAdd._fridge = YES;
-    }else{
-        roomToAdd._fridge = NO;
+    else{
+        NSLog(@"valid");
+    
+        roomToAdd._name = roomName;
+    
+        if([airconSwitch isOn]){
+            roomToAdd._aircon = YES;
+        }else{
+            roomToAdd._aircon = NO;
+        }
+    
+        if([fridgeSwitch isOn]){
+            roomToAdd._fridge = YES;
+        }else{
+            roomToAdd._fridge = NO;
+        }
+    
+        if([tvSwitch isOn]){
+            roomToAdd._tv = YES;
+        }else{
+            roomToAdd._tv = NO;
+        }
+    
+    
+        NSLog(@"ROOM TO ADD: %@: Aircon:%hhd, Fridge:%hhd, TV:%hhd", roomToAdd._name, roomToAdd._aircon, roomToAdd._fridge, roomToAdd._tv);
+    
+        [roomsList.rooms addObject: roomToAdd];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
-    
-    if([tvSwitch isOn]){
-        roomToAdd._tv = YES;
-    }else{
-        roomToAdd._tv = NO;
-    }
-    
-    
-    NSLog(@"ROOM TO ADD: %@: Aircon:%hhd, Fridge:%hhd, TV:%hhd", roomToAdd._name, roomToAdd._aircon, roomToAdd._fridge, roomToAdd._tv);
-    [roomsList.rooms addObject: roomToAdd];
+
 }
 
 

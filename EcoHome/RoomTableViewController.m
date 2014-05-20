@@ -7,6 +7,7 @@
 //
 
 #import "RoomTableViewController.h"
+#import "ViewRoomViewController.h"
 
 @interface RoomTableViewController ()
 
@@ -36,6 +37,7 @@
     [super viewDidLoad];
     roomsList = [Room sharedInstance];
     
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -54,6 +56,16 @@
     
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //NSLog(@"pressed room: %d", indexPath.row);
+    //roomToView = indexPath.row;
+    //roomToView = 1;
+    //[self performSegueWithIdentifier:@"viewingSegue" sender:];
+    
+}
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return roomsList.rooms.count;
 }
@@ -66,13 +78,25 @@
     
     RoomObject* room = [roomsList.rooms objectAtIndex:indexPath.row];
     
-    //NSArray *bits = [entry componentsSeparatedByString:@"&"];
-    
     cell.textLabel.text = room._name;
     
     return cell;
 }
 
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    
+    if ([segue.identifier isEqualToString:@"viewingSegue"]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        roomToView = indexPath.row;
+        NSLog(@"roomToView(inPrepForSegue): %d", roomToView);
+        [[segue destinationViewController] setChosenRoom: roomToView];
+    }
+    
+    
+}
 
 
 

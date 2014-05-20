@@ -17,6 +17,7 @@
     IBOutlet UISwitch *fridgeSwitch;
     IBOutlet UISwitch *tvSwitch;
     RoomObject *roomToAdd;
+    
 }
 
 - (IBAction)cancelPressed:(id)sender;
