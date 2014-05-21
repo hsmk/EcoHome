@@ -35,6 +35,28 @@
     chosenRoom = [roomsList.rooms objectAtIndex:chosenRoomNumber];
     nameLabel.text = chosenRoom._name;
     
+    if (chosenRoom._aircon) {
+        airconLabel.text = @"Airconditioner: YES";
+        NSLog(@"Aircon");
+    } else {
+        airconLabel.text = @"Airconditioner: NO";
+        NSLog(@"No Aircon");
+    }
+    if (chosenRoom._tv) {
+        tvLabel.text = @"Televison: YES";
+        NSLog(@"TV");
+    } else {
+        tvLabel.text = @"Television: NO";
+        NSLog(@"No TV");
+    }
+    if (chosenRoom._fridge) {
+        fridgeLabel.text = @"Refridgerator: YES";
+        NSLog(@"Fridge");
+    }
+    else {
+        fridgeLabel.text = @"Refridgerator: NO";
+        NSLog(@"No Fridge");
+    }
 }
 
 - (void)didReceiveMemoryWarning

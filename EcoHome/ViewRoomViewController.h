@@ -17,7 +17,9 @@
     RoomObject *chosenRoom;
     
     IBOutlet UILabel *nameLabel;
-    
+    IBOutlet UILabel *airconLabel;
+    IBOutlet UILabel *fridgeLabel;
+    IBOutlet UILabel *tvLabel;
 }
 
 - (IBAction)cancelPressed:(id)sender;
