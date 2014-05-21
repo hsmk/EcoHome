@@ -7,6 +7,7 @@
 //
 
 #import "ViewRoomViewController.h"
+#import "EditRoomViewController.h"
 
 
 @interface ViewRoomViewController ()
@@ -24,13 +25,9 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-}
 
-- (void)viewWillAppear:(BOOL)animated{
+
+- (void)viewDidLoad{
     roomsList = [Room sharedInstance];
     chosenRoom = [roomsList.rooms objectAtIndex:chosenRoomNumber];
     nameLabel.text = chosenRoom._name;
@@ -42,6 +39,14 @@
         airconLabel.text = @"Airconditioner: NO";
         NSLog(@"No Aircon");
     }
+    if (chosenRoom._fridge) {
+        fridgeLabel.text = @"Refridgerator: YES";
+        NSLog(@"Fridge");
+    }
+    else {
+        fridgeLabel.text = @"Fridge: NO";
+        NSLog(@"No Fridge");
+    }
     if (chosenRoom._tv) {
         tvLabel.text = @"Televison: YES";
         NSLog(@"TV");
@@ -49,13 +54,11 @@
         tvLabel.text = @"Television: NO";
         NSLog(@"No TV");
     }
-    if (chosenRoom._fridge) {
-        fridgeLabel.text = @"Refridgerator: YES";
-        NSLog(@"Fridge");
-    }
-    else {
-        fridgeLabel.text = @"Refridgerator: NO";
-        NSLog(@"No Fridge");
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    if (![self isBeingPresented]) {
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
@@ -73,11 +76,14 @@
 
 
 -(void)setChosenRoom:(int)roomToView{
-    NSLog(@"roomToView: %d", roomToView);
     chosenRoomNumber = roomToView;
-    NSLog(@"FUCKYERRRRR CJ0ZEN RUIM: %d", chosenRoomNumber);
 }
 
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    [[segue destinationViewController] setChosenRoom:chosenRoomNumber];
+}
 
 /*
 #pragma mark - Navigation

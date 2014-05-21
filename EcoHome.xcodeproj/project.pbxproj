@@ -31,6 +31,7 @@
 		7430F9371924FB1F0051FAB7 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7430F9361924FB1F0051FAB7 /* icon.png */; };
 		7430F93A1924FC5E0051FAB7 /* RoomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7430F9391924FC5E0051FAB7 /* RoomObject.m */; };
 		7430F93D192500810051FAB7 /* NewRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7430F93C192500810051FAB7 /* NewRoomViewController.m */; };
+		74484487192D0A0C0007E856 /* EditRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74484486192D0A0C0007E856 /* EditRoomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		7430F9391924FC5E0051FAB7 /* RoomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomObject.m; sourceTree = "<group>"; };
 		7430F93B192500810051FAB7 /* NewRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRoomViewController.h; sourceTree = "<group>"; };
 		7430F93C192500810051FAB7 /* NewRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRoomViewController.m; sourceTree = "<group>"; };
+		74484485192D0A0C0007E856 /* EditRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditRoomViewController.h; sourceTree = "<group>"; };
+		74484486192D0A0C0007E856 /* EditRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditRoomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 				7430F93C192500810051FAB7 /* NewRoomViewController.m */,
 				740E3C76192B99A800682B5B /* ViewRoomViewController.h */,
 				740E3C77192B99A800682B5B /* ViewRoomViewController.m */,
+				74484485192D0A0C0007E856 /* EditRoomViewController.h */,
+				74484486192D0A0C0007E856 /* EditRoomViewController.m */,
 				7430F9381924FC5E0051FAB7 /* RoomObject.h */,
 				7430F9391924FC5E0051FAB7 /* RoomObject.m */,
 				7430F9331924ED3A0051FAB7 /* Room.h */,
@@ -296,6 +301,7 @@
 				7430F9321924EB590051FAB7 /* RoomTableViewController.m in Sources */,
 				7421DBB8191B7DB100BB1189 /* AppDelegate.m in Sources */,
 				7421DBBB191B7DB100BB1189 /* EcoHome.xcdatamodeld in Sources */,
+				74484487192D0A0C0007E856 /* EditRoomViewController.m in Sources */,
 				7430F93A1924FC5E0051FAB7 /* RoomObject.m in Sources */,
 				740E3C78192B99A800682B5B /* ViewRoomViewController.m in Sources */,
 				7421DBB4191B7DB100BB1189 /* main.m in Sources */,
