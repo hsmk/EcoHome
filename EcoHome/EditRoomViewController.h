@@ -10,7 +10,7 @@
 #import "Room.h"
 #import "RoomObject.h"
 
-@interface EditRoomViewController : UIViewController{
+@interface EditRoomViewController : UIViewController <UIAlertViewDelegate>{
     Room *roomList;
     int chosenRoomNumber;
     RoomObject *chosenRoom;

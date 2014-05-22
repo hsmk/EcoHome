@@ -24,7 +24,7 @@
 }
 
 -(IBAction)cancelPressed:(id)sender{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 - (void)viewDidLoad
@@ -104,9 +104,12 @@
 }
 
 -(IBAction)deletePressed:(id)sender{
+    
+    UIAlertView *messageAlert = [[UIAlertView alloc]
+                                 initWithTitle:@"Warning" message:@"Are you sure you want to delete this room?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+    [messageAlert show];
 
-    [roomList.rooms removeObject:chosenRoom];
-    [self dismissViewControllerAnimated:NO completion:nil];
+    
 }
 
 
@@ -115,6 +118,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 0){
+    }
+    else if (buttonIndex == 1){
+        [roomList.rooms removeObject:chosenRoom];
+        [self dismissViewControllerAnimated:NO completion:nil];
+        
+        
+        
+    }
+}
+
 
 /*
 #pragma mark - Navigation

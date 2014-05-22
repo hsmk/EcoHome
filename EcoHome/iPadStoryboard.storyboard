@@ -67,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NpZ-Ie-s0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-655" y="-2159"/>
+            <point key="canvasLocation" x="-2279" y="-447"/>
         </scene>
         <!--View Room View Controller-->
         <scene sceneID="hqU-L8-QqI">
@@ -157,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLK-Jx-XxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="-3029"/>
+            <point key="canvasLocation" x="-1289" y="-1317"/>
         </scene>
         <!--Edit Room View Controller-->
         <scene sceneID="KHS-2N-nga">
@@ -185,7 +185,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ui-ZO-WW8">
                                         <rect key="frame" x="0.0" y="47" width="90" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Cancel">
+                                        <state key="normal" title="Back">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -275,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qyF-lv-7tn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1344" y="-3029"/>
+            <point key="canvasLocation" x="-280" y="-1317"/>
         </scene>
         <!--New Room View Controller-->
         <scene sceneID="WhE-QR-CEQ">
@@ -388,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAD-7R-nHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="-1785"/>
+            <point key="canvasLocation" x="-1224" y="-73"/>
         </scene>
     </scenes>
     <resources>
