@@ -39,13 +39,13 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kO0-1c-y24">
-                                    <rect key="frame" x="20" y="58" width="105" height="30"/>
+                                    <rect key="frame" x="20" y="58" width="115" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="House Settings">
+                                    <state key="normal" title="House Attributes">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
-                                        <segue destination="LFb-Tg-bZ9" kind="modal" id="UbJ-qi-pVA"/>
+                                        <segue destination="LFb-Tg-bZ9" kind="modal" modalTransitionStyle="crossDissolve" id="UbJ-qi-pVA"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -69,7 +69,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="unX-eR-RYF" kind="modal" identifier="viewingSegue" id="QNN-ek-39y"/>
+                                    <segue destination="unX-eR-RYF" kind="modal" identifier="viewingSegue" modalTransitionStyle="coverVertical" id="QNN-ek-39y"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -441,7 +441,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuA-wc-sS6">
-                                <rect key="frame" x="662" y="199" width="62" height="53"/>
+                                <rect key="frame" x="523" y="125" width="62" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <state key="normal" title="X">
@@ -452,6 +452,13 @@
                                     <action selector="deletePressed:" destination="6rf-9c-tVF" eventType="touchUpInside" id="jcg-yC-ydX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW0-3r-anh">
+                                <rect key="frame" x="234" y="138" width="301" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Marion-Bold" family="Marion" pointSize="40"/>
+                                <color key="textColor" red="0.0020399748320000001" green="0.59383491850000003" blue="0.1202728372" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -464,7 +471,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qyF-lv-7tn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-280" y="-1317"/>
+            <point key="canvasLocation" x="-300" y="-1329"/>
         </scene>
         <!--New Room View Controller-->
         <scene sceneID="WhE-QR-CEQ">
