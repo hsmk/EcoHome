@@ -33,25 +33,25 @@
     nameLabel.text = chosenRoom._name;
     
     if (chosenRoom._aircon) {
-        airconLabel.text = @"Airconditioner: YES";
+        airconLabel.textColor = [UIColor blueColor];
         NSLog(@"Aircon");
     } else {
-        airconLabel.text = @"Airconditioner: NO";
+        airconLabel.textColor = [UIColor grayColor];
         NSLog(@"No Aircon");
     }
     if (chosenRoom._fridge) {
-        fridgeLabel.text = @"Refridgerator: YES";
+        fridgeLabel.textColor = [UIColor blueColor];
         NSLog(@"Fridge");
     }
     else {
-        fridgeLabel.text = @"Fridge: NO";
+        fridgeLabel.textColor = [UIColor grayColor];
         NSLog(@"No Fridge");
     }
     if (chosenRoom._tv) {
-        tvLabel.text = @"Televison: YES";
+        tvLabel.textColor = [UIColor blueColor];
         NSLog(@"TV");
     } else {
-        tvLabel.text = @"Television: NO";
+        tvLabel.textColor = [UIColor grayColor];
         NSLog(@"No TV");
     }
 }

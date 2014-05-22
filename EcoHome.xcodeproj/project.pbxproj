@@ -32,6 +32,10 @@
 		7430F93A1924FC5E0051FAB7 /* RoomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7430F9391924FC5E0051FAB7 /* RoomObject.m */; };
 		7430F93D192500810051FAB7 /* NewRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7430F93C192500810051FAB7 /* NewRoomViewController.m */; };
 		74484487192D0A0C0007E856 /* EditRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74484486192D0A0C0007E856 /* EditRoomViewController.m */; };
+		83A3F9FE192E44560074CC64 /* HouseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A3F9FD192E44560074CC64 /* HouseSettingsViewController.m */; };
+		83A3FA02192E576C0074CC64 /* neutral.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A3F9FF192E576C0074CC64 /* neutral.png */; };
+		83A3FA03192E576C0074CC64 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A3FA00192E576C0074CC64 /* sad.png */; };
+		83A3FA04192E576C0074CC64 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A3FA01192E576C0074CC64 /* happy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,11 @@
 		7430F93C192500810051FAB7 /* NewRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRoomViewController.m; sourceTree = "<group>"; };
 		74484485192D0A0C0007E856 /* EditRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditRoomViewController.h; sourceTree = "<group>"; };
 		74484486192D0A0C0007E856 /* EditRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditRoomViewController.m; sourceTree = "<group>"; };
+		83A3F9FC192E44560074CC64 /* HouseSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseSettingsViewController.h; sourceTree = "<group>"; };
+		83A3F9FD192E44560074CC64 /* HouseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseSettingsViewController.m; sourceTree = "<group>"; };
+		83A3F9FF192E576C0074CC64 /* neutral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neutral.png; sourceTree = "<group>"; };
+		83A3FA00192E576C0074CC64 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
+		83A3FA01192E576C0074CC64 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +169,8 @@
 				740E3C77192B99A800682B5B /* ViewRoomViewController.m */,
 				74484485192D0A0C0007E856 /* EditRoomViewController.h */,
 				74484486192D0A0C0007E856 /* EditRoomViewController.m */,
+				83A3F9FC192E44560074CC64 /* HouseSettingsViewController.h */,
+				83A3F9FD192E44560074CC64 /* HouseSettingsViewController.m */,
 				7430F9381924FC5E0051FAB7 /* RoomObject.h */,
 				7430F9391924FC5E0051FAB7 /* RoomObject.m */,
 				7430F9331924ED3A0051FAB7 /* Room.h */,
@@ -172,6 +183,9 @@
 		7421DBAE191B7DB100BB1189 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83A3F9FF192E576C0074CC64 /* neutral.png */,
+				83A3FA00192E576C0074CC64 /* sad.png */,
+				83A3FA01192E576C0074CC64 /* happy.png */,
 				7430F9361924FB1F0051FAB7 /* icon.png */,
 				7421DBAF191B7DB100BB1189 /* EcoHome-Info.plist */,
 				7421DBB0191B7DB100BB1189 /* InfoPlist.strings */,
@@ -276,10 +290,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A3FA03192E576C0074CC64 /* sad.png in Resources */,
 				7421DBB2191B7DB100BB1189 /* InfoPlist.strings in Resources */,
 				7421DBBD191B7DB100BB1189 /* Images.xcassets in Resources */,
+				83A3FA02192E576C0074CC64 /* neutral.png in Resources */,
 				7430F9371924FB1F0051FAB7 /* icon.png in Resources */,
 				7421DBDE191B7EEE00BB1189 /* iPadStoryboard.storyboard in Resources */,
+				83A3FA04192E576C0074CC64 /* happy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +319,7 @@
 				7421DBB8191B7DB100BB1189 /* AppDelegate.m in Sources */,
 				7421DBBB191B7DB100BB1189 /* EcoHome.xcdatamodeld in Sources */,
 				74484487192D0A0C0007E856 /* EditRoomViewController.m in Sources */,
+				83A3F9FE192E44560074CC64 /* HouseSettingsViewController.m in Sources */,
 				7430F93A1924FC5E0051FAB7 /* RoomObject.m in Sources */,
 				740E3C78192B99A800682B5B /* ViewRoomViewController.m in Sources */,
 				7421DBB4191B7DB100BB1189 /* main.m in Sources */,

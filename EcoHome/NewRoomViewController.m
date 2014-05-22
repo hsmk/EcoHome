@@ -56,7 +56,7 @@
     if ([roomName isEqualToString:@""]){
         
         NSLog(@"invalid");
-        UIAlertView *invalidTextAlert = [[UIAlertView alloc] initWithTitle:@"Room Name Error" message:@"A room name must contain some letters!" delegate:self cancelButtonTitle:@"GOTCHA!" otherButtonTitles: nil];
+        UIAlertView *invalidTextAlert = [[UIAlertView alloc] initWithTitle:@"Room Name Error" message:@"A room name must contain some letters!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [invalidTextAlert show];
 
     }
