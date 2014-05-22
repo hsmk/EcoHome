@@ -108,6 +108,7 @@
     UIAlertView *messageAlert = [[UIAlertView alloc]
                                  initWithTitle:@"Warning" message:@"Are you sure you want to delete this room?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
     [messageAlert show];
+    
 
     
 }
