@@ -104,9 +104,19 @@
 }
 
 -(IBAction)deletePressed:(id)sender{
-
-    [roomList.rooms removeObject:chosenRoom];
-    [self dismissViewControllerAnimated:NO completion:nil];
+    
+    UIAlertView *deleteAlert = [[UIAlertView alloc] initWithTitle:@"Deleting Room" message:@"Are you sure you want to send this room into the nether?" delegate:self cancelButtonTitle:@"YES" otherButtonTitles:@"NO", nil];
+    
+    [deleteAlert show];
+    
+    if (deleteAlert.cancelButtonIndex) {
+        NSLog(@"Cancel");
+    }
+    else{
+        NSLog(@"Deleting room");
+        [roomList.rooms removeObject:chosenRoom];
+        [self dismissViewControllerAnimated:NO completion:nil];
+    }
 }
 
 
