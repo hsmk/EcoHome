@@ -35,36 +35,33 @@
     
     chosenRoom = [roomList.rooms objectAtIndex:chosenRoomNumber];
     nameField.text = chosenRoom._name;
-    
-
-    
-    if (chosenRoom._aircon) {
-        [airconSwitch setOn:YES animated:YES];
-    }
-    else{
-        [airconSwitch setOn:NO animated:YES];
-    }
-    if (chosenRoom._tv) {
-        [tvSwitch setOn:YES animated:YES];
-    }
-    else{
-        [tvSwitch setOn:NO animated:YES];
-    }
-    if (chosenRoom._fridge) {
-        [fridgeSwitch setOn:YES animated:YES];
-    }
-    else{
-        [fridgeSwitch setOn:NO animated:YES];
-    }
+    valueLabel0.text = [[NSString alloc]initWithFormat: @"%d", chosenRoom._aircon];
+    valueLabel1.text = [[NSString alloc]initWithFormat: @"%d", chosenRoom._fridge];
+    valueLabel2.text = [[NSString alloc]initWithFormat: @"%d", chosenRoom._tv];
+    stepper0.value = chosenRoom._aircon;
+    stepper1.value = chosenRoom._fridge;
+    stepper2.value = chosenRoom._tv;
 }
 
 -(void)setChosenRoom:(int)roomToEdit{
     chosenRoomNumber = roomToEdit;
 }
 
+
+
+
 -(IBAction)savePressed:(id)sender{
     NSString *roomName = [nameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-
+    int airconValue = [valueLabel0.text intValue];
+    NSLog(@"aircon %d", airconValue);
+    int fridgeValue = [valueLabel1.text intValue];
+    NSLog(@"fridge %d", fridgeValue);
+    int tvValue = [valueLabel2.text intValue];
+    NSLog(@"tv %d", tvValue);
+    
+    
+    
+    
     if ([roomName isEqualToString:@""]){
         
         NSLog(@"invalid");
@@ -75,32 +72,14 @@
     
     else{
         NSLog(@"valid");
-        
         chosenRoom._name = roomName;
-        
-        if([airconSwitch isOn]){
-            chosenRoom._aircon = YES;
-        }else{
-            chosenRoom._aircon = NO;
-        }
-        
-        if([fridgeSwitch isOn]){
-            chosenRoom._fridge = YES;
-        }else{
-            chosenRoom._fridge = NO;
-        }
-        
-        if([tvSwitch isOn]){
-            chosenRoom._tv = YES;
-        }else{
-            chosenRoom._tv = NO;
-        }
-
+        chosenRoom._aircon = airconValue;
+        chosenRoom._fridge = fridgeValue;
+        chosenRoom._tv = tvValue;
         
         [self dismissViewControllerAnimated:NO completion:nil];
     }
     
-
 }
 
 -(IBAction)deletePressed:(id)sender{
@@ -129,6 +108,29 @@
         [self dismissViewControllerAnimated:NO completion:nil];
         
         
+        
+    }
+}
+
+-(IBAction)labelValueChanged:(UIStepper*)sender {
+    NSLog(@"tag:%ld", (long)[sender tag]);
+    
+    
+    switch ([sender tag]) {
+        case 0:
+            valueLabel0.text = [NSString stringWithFormat:@"%@", [NSNumber numberWithInteger:[(UIStepper *)sender value]]];
+            break;
+            
+        case 1:
+            valueLabel1.text = [NSString stringWithFormat:@"%@", [NSNumber numberWithInteger:[(UIStepper *)sender value]]];
+            break;
+            
+        case 2:
+            valueLabel2.text = [NSString stringWithFormat:@"%@", [NSNumber numberWithInteger:[(UIStepper *)sender value]]];
+            break;
+            
+        default:
+            break;
         
     }
 }

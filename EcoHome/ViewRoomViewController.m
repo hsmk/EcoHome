@@ -34,26 +34,36 @@
     
     if (chosenRoom._aircon) {
         airconLabel.textColor = [UIColor blueColor];
-        NSLog(@"Aircon");
+        airconValueLabel.textColor = [UIColor blueColor];
+        airconValueLabel.text = [[NSString alloc]initWithFormat:@"%d", chosenRoom._aircon];
+        NSLog(@"Aircon - %d",chosenRoom._aircon);
     } else {
         airconLabel.textColor = [UIColor grayColor];
+        airconValueLabel.textColor = [UIColor grayColor];
         NSLog(@"No Aircon");
     }
     if (chosenRoom._fridge) {
         fridgeLabel.textColor = [UIColor blueColor];
-        NSLog(@"Fridge");
+        fridgeValueLabel.textColor = [UIColor blueColor];
+        fridgeValueLabel.text = [[NSString alloc]initWithFormat:@"%d", chosenRoom._fridge];
+        NSLog(@"Fridge - %d", chosenRoom._fridge);
     }
     else {
         fridgeLabel.textColor = [UIColor grayColor];
+        fridgeValueLabel.textColor = [UIColor grayColor];
         NSLog(@"No Fridge");
     }
     if (chosenRoom._tv) {
         tvLabel.textColor = [UIColor blueColor];
-        NSLog(@"TV");
+        tvValueLabel.textColor = [UIColor blueColor];
+        tvValueLabel.text = [[NSString alloc]initWithFormat:@"%d", chosenRoom._tv];
+        NSLog(@"TV - %d", chosenRoom._tv);
     } else {
         tvLabel.textColor = [UIColor grayColor];
+        tvValueLabel.textColor = [UIColor grayColor];
         NSLog(@"No TV");
     }
+
 }
 
 - (void)viewDidAppear:(BOOL)animated{

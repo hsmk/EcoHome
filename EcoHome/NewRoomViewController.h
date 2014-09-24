@@ -13,12 +13,14 @@
 @interface NewRoomViewController : UIViewController{
     Room *roomsList;
     IBOutlet UITextField *nameField;
-    IBOutlet UISwitch *airconSwitch;
-    IBOutlet UISwitch *fridgeSwitch;
-    IBOutlet UISwitch *tvSwitch;
-    RoomObject *roomToAdd;
+    IBOutlet UILabel *valueLabel0;
+    IBOutlet UILabel *valueLabel1;
+    IBOutlet UILabel *valueLabel2;
     
+    RoomObject *roomToAdd;
 }
+
+
 
 - (IBAction)cancelPressed:(id)sender;
 

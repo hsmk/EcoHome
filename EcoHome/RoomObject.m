@@ -22,7 +22,7 @@
     return self;
 }
 
-- (id) initWithName:(NSString*)name AndAircon:(BOOL)aircon AndFridge:(BOOL)fridge AndTelevision:(BOOL)tv{
+- (id) initWithName:(NSString*)name AndAircon:(int)aircon AndFridge:(int)fridge AndTelevision:(int)tv{
     self = [super init];
     if (self) {
         _name = name;

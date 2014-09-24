@@ -15,9 +15,14 @@
     int chosenRoomNumber;
     RoomObject *chosenRoom;
     IBOutlet UITextField *nameField;
-    IBOutlet UISwitch *tvSwitch;
-    IBOutlet UISwitch *airconSwitch;
-    IBOutlet UISwitch *fridgeSwitch;
+    
+    IBOutlet UIStepper *stepper0;
+    IBOutlet UIStepper *stepper1;
+    IBOutlet UIStepper *stepper2;
+    
+    IBOutlet UILabel *valueLabel0;
+    IBOutlet UILabel *valueLabel1;
+    IBOutlet UILabel *valueLabel2;
 }
 
 -(IBAction)savePressed:(id)sender;

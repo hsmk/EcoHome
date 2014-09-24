@@ -39,14 +39,14 @@
         int numFridges = 0;
         int numTvs = 0;
         for (RoomObject* room in roomList.rooms) {
-            if (room._aircon) {
-                numAircons+=1;
+            if (room._aircon > 0) {
+                numAircons += room._aircon;
             }
-            if (room._fridge) {
-                numFridges+=1;
+            if (room._fridge > 0) {
+                numFridges += room._fridge;
             }
-            if (room._tv) {
-                numTvs+=1;
+            if (room._tv > 0) {
+                numTvs += room._tv;
             }
             
             totalAirconsLabel.text = [NSString stringWithFormat:@"%d", numAircons];

@@ -20,6 +20,10 @@
     IBOutlet UILabel *airconLabel;
     IBOutlet UILabel *fridgeLabel;
     IBOutlet UILabel *tvLabel;
+    IBOutlet UILabel *airconValueLabel;
+    IBOutlet UILabel *fridgeValueLabel;
+    IBOutlet UILabel *tvValueLabel;
+
 
 }
 

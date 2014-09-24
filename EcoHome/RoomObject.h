@@ -12,15 +12,15 @@
     
     
     NSString* _name;
-    BOOL _aircon;
-    BOOL _fridge;
-    BOOL _tv;
+    int _aircon;
+    int _fridge;
+    int _tv;
     
 }
 
 @property(nonatomic, retain) NSString* _name;
-@property(nonatomic) BOOL _aircon;
-@property(nonatomic) BOOL _fridge;
-@property(nonatomic) BOOL _tv;
+@property(nonatomic) int _aircon;
+@property(nonatomic) int _fridge;
+@property(nonatomic) int _tv;
 
 @end

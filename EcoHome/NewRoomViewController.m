@@ -30,6 +30,7 @@
     roomsList = [Room sharedInstance];
     roomToAdd = [[RoomObject alloc] init];
     // Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,12 +45,22 @@
     
 }
 
-
-
 -(IBAction)addNewRoom:(id)sender{
     
+    //NSString* s = @"3";
+    //int d = [s intValue];
     
     NSString *roomName = [nameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
+    int airconValue = [valueLabel0.text intValue];
+    NSLog(@"%d", airconValue);
+    
+    
+    int fridgeValue = [valueLabel1.text intValue];
+    NSLog(@"%d", fridgeValue);
+    int tvValue = [valueLabel2.text intValue];
+    NSLog(@"%d", tvValue);
+    
 
     
     
@@ -65,32 +76,40 @@
         NSLog(@"valid");
     
         roomToAdd._name = roomName;
+        roomToAdd._aircon = airconValue;
+        roomToAdd._fridge = fridgeValue;
+        roomToAdd._tv = tvValue;
+        
+
     
-        if([airconSwitch isOn]){
-            roomToAdd._aircon = YES;
-        }else{
-            roomToAdd._aircon = NO;
-        }
-    
-        if([fridgeSwitch isOn]){
-            roomToAdd._fridge = YES;
-        }else{
-            roomToAdd._fridge = NO;
-        }
-    
-        if([tvSwitch isOn]){
-            roomToAdd._tv = YES;
-        }else{
-            roomToAdd._tv = NO;
-        }
-    
-    
-        NSLog(@"ROOM TO ADD: %@: Aircon:%hhd, Fridge:%hhd, TV:%hhd", roomToAdd._name, roomToAdd._aircon, roomToAdd._fridge, roomToAdd._tv);
+        NSLog(@"ROOM TO ADD: %@: Aircon:%d, Fridge:%d, TV:%d", roomToAdd._name, roomToAdd._aircon, roomToAdd._fridge, roomToAdd._tv);
     
         [roomsList.rooms addObject: roomToAdd];
         [self dismissViewControllerAnimated:YES completion:nil];
     }
+}
 
+-(IBAction)labelValueChanged:(UIStepper*)sender {
+        NSLog(@"tag:%ld", (long)[sender tag]);
+        
+        
+        switch ([sender tag]) {
+            case 0:
+                valueLabel0.text = [NSString stringWithFormat:@"%@", [NSNumber numberWithInteger:[(UIStepper *)sender value]]];
+                break;
+                
+            case 1:
+                valueLabel1.text = [NSString stringWithFormat:@"%@", [NSNumber numberWithInteger:[(UIStepper *)sender value]]];
+                break;
+                
+            case 2:
+                valueLabel2.text = [NSString stringWithFormat:@"%@", [NSNumber numberWithInteger:[(UIStepper *)sender value]]];
+                break;
+                
+            default:
+                break;
+        
+    }
 }
 
 
